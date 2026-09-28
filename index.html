@@ -43,7 +43,7 @@ nav ul a:hover{color:var(--ink)}
 .hero p.lead{margin-bottom:28px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .chart{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
-.chart svg{width:100%;height:auto;display:block}
+.chart img{width:100%;aspect-ratio:1.5;display:block;object-fit:cover;border-radius:10px}
 .chart .k{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
 .chip{background:var(--tint);border-radius:8px;padding:8px 12px;font-size:.85rem;color:var(--muted)}
 .chip b{display:block;color:var(--ink);font-size:.95rem}
@@ -180,6 +180,20 @@ nav .btn{background:var(--teal);color:#fff;border-color:var(--teal)}
 #contact{background:radial-gradient(500px 340px at 90% 0,rgba(14,124,134,.14),transparent 70%),var(--tint)!important;--bg:#FAFBFC;--ink:#0F1B2D;--muted:#4A5A70;--line:#E3E8EF;--surface:#fff;--teal:#0E7C86}
 #contact form{background:#fff;border-color:var(--line);box-shadow:var(--shadow)}
 footer{background:var(--bg);color:var(--muted);border-top:1px solid var(--line)}
+/* ---- Shared image background ---- */
+body{background:#101746 url('assets/portfolio-background.jpg') center/cover fixed;color:#F4F6FF}
+body::before{background:linear-gradient(rgba(7,13,45,.72),rgba(7,13,45,.72)),url('assets/portfolio-background.jpg') center/cover fixed}
+nav{background:rgba(7,13,45,.88)!important;border-bottom-color:rgba(255,255,255,.18)}
+nav .brand,nav ul a{color:#F4F6FF}nav ul a:hover{color:#82E4D2}
+nav .btn{background:#4FC3CE;color:#07102F;border-color:#4FC3CE}
+section{background:rgba(7,13,45,.68)!important;color:#F4F6FF}
+section h2,section h3{color:#F4F6FF}
+section .lead,section p,section li{color:#D5DCF5}
+.hero{background:rgba(7,13,45,.54);color:#F4F6FF}
+.hero h1{color:#fff}.hero .lead{color:#D5DCF5}
+#expertise,#contact{--bg:transparent;--ink:#F4F6FF;--muted:#D5DCF5;--line:rgba(255,255,255,.2);--surface:rgba(255,255,255,.96);background:rgba(7,13,45,.68)!important}
+.ticker{background:rgba(7,13,45,.82);border-color:rgba(255,255,255,.18)}
+footer{background:rgba(7,13,45,.86);color:#D5DCF5;border-top-color:rgba(255,255,255,.18)}
 </style>
 </head>
 <body>
@@ -197,16 +211,7 @@ footer{background:var(--bg);color:var(--muted);border-top:1px solid var(--line)}
 <p class="lead">Turning data into actionable insights and using analytical thinking to solve financial and business problems.</p>
 <div class="cta"><a class="btn" href="#projects">View My Work</a><a class="btn alt" href="cv.pdf" download>Download CV</a></div>
 </div>
-<div class="chart" role="img" aria-label="Illustrative horizontal bar chart showing focus across data science, financial analytics, business intelligence and AI applications"><span class="fb a">BSc Statistics</span><span class="fb b">CPA Intermediate</span>
-<svg viewBox="0 0 440 250">
-<text x="10" y="28" fill="var(--ink)" font-size="18" font-weight="700">Portfolio focus areas</text>
-<g fill="var(--muted)" font-size="13" font-weight="600">
-<text x="10" y="70">Data science</text><text x="10" y="112">Financial analytics</text><text x="10" y="154">Business intelligence</text><text x="10" y="196">AI applications</text>
-</g>
-<g fill="var(--tint)"><rect x="150" y="56" width="270" height="20" rx="10"/><rect x="150" y="98" width="270" height="20" rx="10"/><rect x="150" y="140" width="270" height="20" rx="10"/><rect x="150" y="182" width="270" height="20" rx="10"/></g>
-<g class="draw" fill="var(--teal)"><rect x="150" y="56" width="238" height="20" rx="10"/><rect x="150" y="98" width="216" height="20" rx="10"/><rect x="150" y="140" width="194" height="20" rx="10"/><rect x="150" y="182" width="173" height="20" rx="10"/></g>
-<g fill="var(--ink)" font-size="12" font-weight="700" text-anchor="end"><text x="430" y="71">Core</text><text x="430" y="113">Core</text><text x="430" y="155">Applied</text><text x="430" y="197">Applied</text></g>
-</svg>
+<div class="chart" role="img" aria-label="Financial charts and market analysis on a desk"><img src="assets/portfolio-chart.jpg" alt="Financial charts and market analysis on a desk">
 <div class="k"><div class="chip"><b>Statistics</b>Modelling foundation</div><div class="chip"><b>Forecasting</b>Trend and risk</div><div class="chip"><b>Finance</b>Reporting and audit</div></div>
 </div>
 </div></header>
