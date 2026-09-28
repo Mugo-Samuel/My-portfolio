@@ -183,6 +183,9 @@ footer{background:var(--bg);color:var(--muted);border-top:1px solid var(--line)}
 /* ---- Shared image background ---- */
 body{background:#101746 url('assets/portfolio-background.jpg') center/cover fixed;color:#F4F6FF}
 body::before{background:linear-gradient(rgba(7,13,45,.72),rgba(7,13,45,.72)),url('assets/portfolio-background.jpg') center/cover fixed}
+/* ---- Shared image background ---- */
+body{background-image:linear-gradient(rgba(7,13,45,.48),rgba(7,13,45,.48)),url('assets/portfolio-background.jpg');background-position:center;background-size:cover;background-attachment:fixed;color:#F4F6FF}
+body::before{display:none}
 nav{background:rgba(7,13,45,.88)!important;border-bottom-color:rgba(255,255,255,.18)}
 nav .brand,nav ul a{color:#F4F6FF}nav ul a:hover{color:#82E4D2}
 nav .btn{background:#4FC3CE;color:#07102F;border-color:#4FC3CE}
@@ -194,6 +197,12 @@ section .lead,section p,section li{color:#D5DCF5}
 #expertise,#contact{--bg:transparent;--ink:#F4F6FF;--muted:#D5DCF5;--line:rgba(255,255,255,.2);--surface:rgba(255,255,255,.96);background:rgba(7,13,45,.68)!important}
 .ticker{background:rgba(7,13,45,.82);border-color:rgba(255,255,255,.18)}
 footer{background:rgba(7,13,45,.86);color:#D5DCF5;border-top-color:rgba(255,255,255,.18)}
+.pillar *,.card *,.facts li *,.edu>div *,.chart .k *{color:#0F1B2D}
+.pillar p,.card p,.card dd,.card .dom,.card .links a,.facts li span,.edu>div p{color:#0F1B2D}
+/* Keep white panels readable before and during interaction. */
+.pillar *,.card *,.facts li *,.edu>div *,.chart .k *,.niche .grid div *{color:#0F1B2D!important}
+.pillar:hover *,.card:hover *,.facts li:hover *,.edu>div:hover *,.niche .grid div:hover *{color:#0F1B2D!important}
+.tags span:hover{background:#E6F3F2;color:#0F1B2D!important;border-color:var(--teal)}
 </style>
 </head>
 <body>
